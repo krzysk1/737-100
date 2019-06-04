@@ -4,7 +4,7 @@
         <[vec32array][ContactSpheres][ (10.441 0.0 -5.079 0.3) (-0.084 2.77 -5.088 0.54) (-0.084 -2.77 -5.088 0.54) ]>
         <[string8][DisplayName][Boeing 737-100]>
         <[string8][DescriptionTextEN][The Boeing 737 is a short- to medium-range twinjet narrow-body airliner. Originally envisioned in 1964, the initial 737-100 made its first flight in April 1967 and entered airline service in February 1968 at Lufthansa. The 737 series is the best-selling jet airliner in the history of aviation. (from Wikipedia)
-		Converted from FlightGear by Krzysztof Kaniewski . Oryginal 3D model made by Emmanuel Baranger.]>
+Converted from FlightGear by Krzysztof Kaniewski. Original 3D model made by Emmanuel Baranger.]>
 		<[float64][WingSpan][28.3]>
 		<[float64][Mass][28061.0]>
 		<[float64][MaximumSpeed][236.6]>

@@ -4,7 +4,7 @@
 	// Plane: Boeing 737-100
 	// 3D model: Emmanuel Baranger
 	// Compilation: krzysk(at)wp.pl
-	// Date: Fri Dec 04 2015; Mar 2019
+	// Date: Fri Dec 04 2015; June 2019
 	//-------------------------------------
 
     <[modelmanager][][]
@@ -642,7 +642,7 @@
                 <[string8][Input][ServoGearSequence.Output]>
                 <[string8][Message][Aircraft.Gear]>
             >
-            <[input_default][AileronInput][]
+            <[input_control][AileronInput][]
                 <[tmvector2d][Range][ -1.0 1.0 ]>
                 <[string8][Input][Controls.Roll.Input]>
             >
@@ -650,7 +650,7 @@
                 <[string8][Input][AileronInput.Output]>
                 <[string8][Message][Aircraft.Aileron]>
             >
-            <[input_default][ElevatorInput][]
+            <[input_control][ElevatorInput][]
                 <[tmvector2d][Range][ -1.0 1.0 ]>
                 <[string8][Input][Controls.Pitch.Input]>
             >
@@ -668,10 +668,12 @@
             >
             <[input_default][FlapsInput][]
                 <[string8][Input][Controls.Flaps]>
+                <[uint][Positions][5]>
+                <[float64][Value][0.0]>
             >
             <[linear_interpolation][FlapsMapping][]
                 <[string8][Input][FlapsInput.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (0.5 0.26) (1.0 0.873) ]>
+                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.8) ]>
             >
             <[sender][SenderFlapPosition][]
                 <[string8][Input][FlapsMapping.Output]>
@@ -683,7 +685,7 @@
                 <[string8][Message][Aircraft.Flaps]>
             >
             <[sender][SenderFlapMaximum][]
-                <[string8][Input][0.873]>
+                <[string8][Input][0.8]>
                 <[string8][Message][Aircraft.Flaps]>
                 <[string8][Qualifiers][maximum]>
             >
