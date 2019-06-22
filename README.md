@@ -46,3 +46,4 @@ These liveries were made by : Brett HARRISON. Thanks to him
 
 Repaint kit and other resources are available here: https://github.com/FGMEMBERS/737-100
 
+Aircraft Technical Data & Specifications: http://www.airliners.net/aircraft-data/boeing-737-100200/91
