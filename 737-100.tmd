@@ -297,7 +297,7 @@
                 <[tmvector3d][X0][0.0 0.0 1.0]>
                 <[tmvector3d][R0][ -0.112 2.601 -3.175 ]>
                 <[float64][Kp][5500000.0]>
-                <[float64][Kd][25000.0]>
+                <[float64][Kd][225000.0]>
                 <[uint32][Type][1]>
             >
 			
@@ -330,7 +330,7 @@
                 <[tmvector3d][X0][0.0 0.0 1.0]>
                 <[tmvector3d][R0][ -0.112 -2.601 -3.175 ]>
                 <[float64][Kp][5500000.0]>
-                <[float64][Kd][25000.0]>
+                <[float64][Kd][225000.0]>
                 <[uint32][Type][1]>
             >
 			
@@ -1160,11 +1160,9 @@
             >
             <[integral][LeftEngineAngle][]
                 <[string8][Input][LeftEngine.N1]>
-            //    <[float64][InitialValue][0.0]>
             >
             <[integral][RightEngineAngle][]
                 <[string8][Input][RightEngine.N1]>
-            //    <[float64][InitialValue][0.0]>
             >
             <[output][LeftEngineRotationAngle][]
                 <[string8][Input][LeftEngineAngle.Output]>
@@ -3961,10 +3959,10 @@
         >
         <[pointer_list_tmsound][SoundObjects][]
             <[soundinput][LeftEnginePercentage][]
-                <[uint32][InputID][LeftEngineN1.Output]>
+                <[uint32][InputID][LeftEngineRotation.Output]>
             >
             <[soundinput][RightEnginePercentage][]
-                <[uint32][InputID][RightEngineN1.Output]>
+                <[uint32][InputID][RightEngineRotation.Output]>
             >
             <[soundmapping][LeftEngineVolume0][]
                 <[string8][Input][LeftEnginePercentage.Output]>
@@ -4253,7 +4251,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][rumble.wav]>
             >
+        >
+    >
+>
 
->	>	>
-
-//sound/reverse_thrust_intern.tsb
